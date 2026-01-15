@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">SADO Finance Consulting - Konsulencë financiare dhe kontabilitet</title>
+  <meta name="description" data-i18n="meta.description" content="Zgjidhje moderne për kontabilitet, tatime dhe konsulencë financiare për biznese të përgjegjshme.">
+
+  
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Toast -->
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="topbar-contact">
+          <span class="topbar-icon" aria-hidden="true">
+            <!-- Phone SVG -->
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M17 2H7C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H7V4h10v16z"/>
+            </svg>
+          </span>
+          <a href="tel:+355682392034" data-i18n="topbar.phoneText">+355 68 239 2034</a>
+        </span>
+        <span class="topbar-contact">
+          <span class="topbar-icon" aria-hidden="true">
+            <!-- Email SVG -->
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 
+              2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
+              4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </span>
+          <a href="mailto:info@sadoconsulting.al" data-i18n="topbar.emailText">info@sadoconsulting.al</a>
+        </span>
+      </div>
+      <div class="topbar-right">
+        <span data-i18n="topbar.follow">Na ndiqni</span>
+        <div class="social-icons" aria-label="Social media">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <!-- Instagram SVG -->
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 
+              2.243 5 5 5h10c2.757 0 5-2.243 
+              5-5V7c0-2.757-2.243-5-5-5H7zm10 
+              2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 
+              3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 
+              1.346-3 3-3h10zm-5 2c-3.309 0-6 2.691-6 
+              6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 
+              2c2.206 0 4 1.794 4 4s-1.794 4-4 
+              4-4-1.794-4-4 1.794-4 4-4zm5.5-.75a1.25 
+              1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 
+              2.5z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social-link">
+            <!-- LinkedIn SVG -->
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.88 
+              6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 
+              1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 
+              0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4.1 
+              0 4.8 2.7 4.8 6.2V24h-4v-7.2c0-1.7 0-3.8-2.3-3.8-2.3 
+              0-2.7 1.8-2.7 3.7V24h-4V8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="url(#logoGradient)"/>
+          <rect x="9" y="22" width="4" height="9" rx="1" fill="white" opacity="0.92"/>
+          <rect x="16" y="18" width="4" height="13" rx="1" fill="white" opacity="0.92"/>
+          <rect x="23" y="14" width="4" height="17" rx="1" fill="white" opacity="0.92"/>
+          <path d="M9 24L17 18L23 20L31 12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M31 12L30 15M31 12L28 13" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#1b74e4"/>
+              <stop offset="100%" stop-color="#0ea5e9"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text" data-i18n="logo.text">SADO Finance Consulting</span>
+      </a>
+
+      <button class="lang-toggle" type="button" aria-label="Change language">
+        <span data-lang="al" class="lang-option active">AL</span>
+        <span>|</span>
+        <span data-lang="en" class="lang-option">EN</span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-i18n="nav.home">Hyrje</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav.services">Shërbimet</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">Rreth nesh</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontakti</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary header-cta" data-i18n="header.cta">Rezervo një konsultë</a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul>
+          <li><a href="#home" class="mobile-link" data-i18n="nav.home">Ballina</a></li>
+          <li><a href="#services" class="mobile-link" data-i18n="nav.services">Shërbimet</a></li>
+          <li><a href="#about" class="mobile-link" data-i18n="nav.about">Rreth nesh</a></li>
+          <li><a href="#contact" class="mobile-link" data-i18n="nav.contact">Kontakti</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary mobile-cta" data-i18n="header.cta">Rezervo një konsultë</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section reveal" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 id="hero-title" data-i18n="hero.title">
+            Partneri juaj i qetësisë financiare
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Ne kombinojmë eksperiencën kontabël dhe teknologjinë moderne për t’ju ndihmuar të merrni vendime të sigurta për biznesin tuaj.
+          </p>
+          <div class="hero-actions">
+            <a href="tel:+355682392034" class="btn btn-primary" data-i18n="hero.callNow">
+              Telefono tani
+            </a>
+            <a href="#contact" class="btn btn-outline" data-i18n="hero.bookConsult">
+              Rezervo konsultën
+            </a>
+          </div>
+          <ul class="hero-highlights" aria-label="Key benefits">
+            <li data-i18n="hero.point1">Raporte të qarta mujore dhe të personalizuara</li>
+            <li data-i18n="hero.point2">Ekspertë me përvojë në biznese lokale dhe ndërkombëtare</li>
+            <li data-i18n="hero.point3">Proces i dixhitalizuar me siguri të lartë të të dhënave</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="hero-card">
+            <img src="https://picsum.photos/600/420?business,finance" alt="" class="hero-image" />
+            <div class="hero-card-overlay">
+              <p class="hero-card-title" data-i18n="hero.cardTitle">Pamje e qartë mbi performancën tuaj financiare</p>
+              <p class="hero-card-meta" data-i18n="hero.cardMeta">Monitorim në kohë reale • Analizë strategjike</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section reveal" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="services-title" data-i18n="services.title">Shërbimet tona kryesore</h2>
+          <p data-i18n="services.subtitle">
+            Zgjidhje të plota financiare që rritin efikasitetin, uljen e riskut dhe qartësinë në çdo hap.
+          </p>
+        </header>
+
+        <div class="services-grid" role="list">
+          <!-- Service card 1 -->
+          <article class="card service-card" data-category="accounting" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ledger SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7 2h10a2 2 0 0 1 2 2v16l-7-3-7 3V4a2 2 0 0 1 2-2z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.items.accounting.title">Kontabilitet i përditësuar</h3>
+            <p data-i18n="services.items.accounting.description">
+              Regjistrim i saktë i çdo transaksioni, raporte të sakta dhe pasqyrë e plotë financiare në kohë.
+            </p>
+            <button class="card-link" type="button"
+              data-service-id="accounting"
+              data-i18n="services.learnMore"
+              aria-haspopup="dialog">
+              Mëso më shumë
+            </button>
+          </article>
+
+          <!-- Service card 2 -->
+          <article class="card service-card" data-category="taxes" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Tax SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14l4-3 4 3 4-3 4 3V5a2 2 0 0 0-2-2z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.items.tax.title">Planifikim tatimor</h3>
+            <p data-i18n="services.items.tax.description">
+              Optimizim i barrës tatimore dhe përputhje e plotë me legjislacionin në fuqi.
+            </p>
+            <button class="card-link" type="button"
+              data-service-id="tax"
+              data-i18n="services.learnMore"
+              aria-haspopup="dialog">
+              Mëso më shumë
+            </button>
+          </article>
+
+          <!-- Service card 3 -->
+          <article class="card service-card" data-category="payroll" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Payroll SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M4 4h16v4H4zm0 6h16v10H4z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.items.payroll.title">Administrim pagash</h3>
+            <p data-i18n="services.items.payroll.description">
+              Llogaritje e pagave, kontributeve dhe deklarimeve, në kohë dhe pa gabime.
+            </p>
+            <button class="card-link" type="button"
+              data-service-id="payroll"
+              data-i18n="services.learnMore"
+              aria-haspopup="dialog">
+              Mëso më shumë
+            </button>
+          </article>
+
+          <!-- Service card 4 -->
+          <article class="card service-card" data-category="consulting" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Consulting SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 3.866 3.134 7 7 
+                7s7-3.134 7-7a7 7 0 0 0-7-7zm0 
+                18c-4.337 0-8 1.567-8 3.5V24h16v-.5C20 21.567 
+                16.337 20 12 20z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.items.consulting.title">Konsulencë strategjike</h3>
+            <p data-i18n="services.items.consulting.description">
+              Analizë financiare dhe strategji rritjeje të përshtatura për modelin tuaj të biznesit.
+            </p>
+            <button class="card-link" type="button"
+              data-service-id="consulting"
+              data-i18n="services.learnMore"
+              aria-haspopup="dialog">
+              Mëso më shumë
+            </button>
+          </article>
+
+          <!-- Service card 5 -->
+          <article class="card service-card" data-category="accounting" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Report SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6 2h9l5 5v15H6z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.items.reporting.title">Raportim menaxherial</h3>
+            <p data-i18n="services.items.reporting.description">
+              Pasqyra të personalizuara për menaxhim, cash-flow dhe analizë të performancës.
+            </p>
+            <button class="card-link" type="button"
+              data-service-id="reporting"
+              data-i18n="services.learnMore"
+              aria-haspopup="dialog">
+              Mëso më shumë
+            </button>
+          </article>
+
+          <!-- Service card 6 -->
+          <article class="card service-card" data-category="taxes" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Compliance SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M9 21.5L3 15l1.41-1.41L9 18.67 19.59 
+                8.09 21 9.5z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.items.compliance.title">Përputhshmëri ligjore</h3>
+            <p data-i18n="services.items.compliance.description">
+              Monitorim i afateve dhe deklarimeve për të shmangur gjobat dhe penalitetet.
+            </p>
+            <button class="card-link" type="button"
+              data-service-id="compliance"
+              data-i18n="services.learnMore"
+              aria-haspopup="dialog">
+              Mëso më shumë
+            </button>
+          </article>
+
+          <!-- Service card 7 -->
+          <article class="card service-card" data-category="consulting" role="listitem">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Growth SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3 17h2v4H3zm4-4h2v8H7zm4-4h2v12h-2zm4-4h2v16h-2z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.items.forecast.title">Parashikim financiar</h3>
+            <p data-i18n="services.items.forecast.description">
+              Skenarë financiarë për investime, kredi dhe zgjerim të qëndrueshëm.
+            </p>
+            <button class="card-link" type="button"
+              data-service-id="forecast"
+              data-i18n="services.learnMore"
+              aria-haspopup="dialog">
+              Mëso më shumë
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Categories / Filters -->
+    <section id="categories" class="section section-soft reveal" aria-labelledby="categories-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="categories-title" data-i18n="categories.title">Shërbime të ndryshme</h2>
+          <p data-i18n="categories.subtitle">
+            Filtroni sipas kategorisë për të gjetur shërbimin që i përshtatet më së miri fazës ku ndodhet biznesi juaj.
+          </p>
+        </header>
+        <div class="pill-group" role="tablist" aria-label="Service categories">
+          <button class="pill active" type="button" data-filter="all" role="tab" aria-selected="true"
+                  data-i18n="categories.all">
+            Të gjitha
+          </button>
+          <button class="pill" type="button" data-filter="accounting" role="tab" aria-selected="false"
+                  data-i18n="categories.accounting">
+            Kontabilitet
+          </button>
+          <button class="pill" type="button" data-filter="taxes" role="tab" aria-selected="false"
+                  data-i18n="categories.taxes">
+            Tatime
+          </button>
+          <button class="pill" type="button" data-filter="payroll" role="tab" aria-selected="false"
+                  data-i18n="categories.payroll">
+            Pagat
+          </button>
+          <button class="pill" type="button" data-filter="consulting" role="tab" aria-selected="false"
+                  data-i18n="categories.consulting">
+            Konsulencë
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section reveal" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <header class="section-header align-left">
+            <h2 id="about-title" data-i18n="about.title">Rreth SADO Finance Consulting</h2>
+            <p data-i18n="about.subtitle">
+              Një ekip specialistësh kontabël, analistësh financiarë dhe këshilltarësh biznesi që punojnë së bashku për t’ju ofruar qartësi dhe siguri.
+            </p>
+          </header>
+          <p data-i18n="about.text1">
+            Ne besojmë se çdo vendim i mirë fillon me të dhëna të sakta. Prandaj kemi ndërtuar një qasje ku raportimi financiar, automatizimi dhe komunikimi njerëzor ecin krah për krah.
+          </p>
+          <p data-i18n="about.text2">
+            Nga bizneset e vogla që sapo kanë nisur, tek organizatat e konsoliduara, ndihmojmë klientët tanë të kuptojnë shifrat dhe t’i kthejnë ato në veprime konkrete.
+          </p>
+          <ul class="about-list">
+            <li data-i18n="about.point1">Mbi 10 vite eksperiencë e kombinuar në financa dhe kontabilitet.</li>
+            <li data-i18n="about.point2">Proces pune transparent dhe komunikim i rregullt me klientët.</li>
+            <li data-i18n="about.point3">Teknologji moderne për menaxhim dokumentesh dhe raportim online.</li>
+          </ul>
+        </div>
+        <div class="about-media">
+          <div class="about-card">
+            <img src="https://picsum.photos/520/360?team,office" alt="" />
+            <div class="about-metric">
+              <div class="about-metric-number" data-i18n="about.metric.number">150+</div>
+              <div class="about-metric-label" data-i18n="about.metric.label">Biznese të mbështetura</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section id="why-us" class="section section-soft reveal" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="why-title" data-i18n="why.title">Pse të punoni me ne?</h2>
+          <p data-i18n="why.subtitle">
+            Kombinojmë ekspertizën, teknologjinë dhe qasjen njerëzore për t’ju ofruar një partneritet afatgjatë.
+          </p>
+        </header>
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Shield SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="why.items.trust.title">Besueshmëri dhe integritet</h3>
+            <ul>
+              <li data-i18n="why.items.trust.point1">Standard i lartë profesionalizmi dhe etikë pune.</li>
+              <li data-i18n="why.items.trust.point2">Proces i qartë miratimi për çdo vendim kritik.</li>
+            </ul>
+          </article>
+
+          <article class="card feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Gear SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm9.4 
+                4a7.38 7.38 0 0 0-.1-1l2.1-1.6-2-3.5-2.5.7a7.44 
+                7.44 0 0 0-1.7-1L16.5 2h-4.9L10 4.6a7.44 7.44 0 0 
+                0-1.7 1l-2.5-.7-2 3.5 2.1 1.6a7.38 7.38 0 0 0-.1 
+                1c0 .34.03.67.08 1L1.8 14.6l2 3.5 2.5-.7c.5.4 1.1.7 
+                1.7 1l1.6 2.6h4.9l1.6-2.6c.6-.3 1.2-.6 1.7-1l2.5.7 
+                2-3.5-2.08-1.62c.05-.33.08-.66.08-1z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="why.items.process.title">Proces i strukturuar</h3>
+            <ul>
+              <li data-i18n="why.items.process.point1">Onboarding i qartë dhe transferim i lehtë i të dhënave.</li>
+              <li data-i18n="why.items.process.point2">Raporte të rregullta dhe afate të dakorduara.</li>
+            </ul>
+          </article>
+
+          <article class="card feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Heart SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 
+                12.28 2 8.5 2 5.42 4.42 3 7.5 
+                3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 
+                3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                6.86-8.55 11.54z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="why.items.care.title">Kujdes njerëzor</h3>
+            <ul>
+              <li data-i18n="why.items.care.point1">Këshillim i personalizuar për çdo vendim të rëndësishëm.</li>
+              <li data-i18n="why.items.care.point2">Përgjigje të shpejta dhe komunikim i hapur.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social responsibility -->
+    <section id="social" class="section reveal" aria-labelledby="social-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="social-title" data-i18n="social.title">Përgjegjësia sociale</h2>
+          <p data-i18n="social.subtitle">
+            Besojmë se suksesin financiar duhet ta ndajmë me komunitetin ku veprojmë.
+          </p>
+        </header>
+        <div class="social-grid">
+          <article class="card social-card">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Book SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M4 4h13v14H4z"/><path fill="currentColor" d="M19 4h1v14h-1z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="social.items.education.title">Edukimi financiar</h3>
+            <p data-i18n="social.items.education.description">
+              Organizojmë trajnime falas për sipërmarrës të rinj dhe studentë në fushën e financës.
+            </p>
+          </article>
+
+          <article class="card social-card">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Store SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M4 4h16v4H4zm1 6h14v10H5z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="social.items.local.title">Biznesi lokal</h3>
+            <p data-i18n="social.items.local.description">
+              Bashkëpunojmë me biznese lokale dhe ofrojmë kushte të favorshme për start-up-et.
+            </p>
+          </article>
+
+          <article class="card social-card">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Leaf SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M5 3c7 0 14 4 14 11-5 0-9-2-11-5 0 4 3 7 7 
+                8-2 2-5 4-9 4C4 21 2 15 2 10 2 6 3 3 5 3z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="social.items.environment.title">Mjedisi</h3>
+            <p data-i18n="social.items.environment.description">
+              Ulje e përdorimit të letrës përmes proceseve tërësisht dixhitale.
+            </p>
+          </article>
+
+          <article class="card social-card">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Balance SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M11 3h2v3h3l-4 7-4-7h3zM4 14h6l-3 6zm10 0h6l-3 6z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="social.items.ethics.title">Etika dhe transparenca</h3>
+            <p data-i18n="social.items.ethics.description">
+              Rregulla të qarta pune dhe raportim i ndershëm për çdo çështje financiare.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section final-cta reveal" aria-labelledby="final-cta-title">
+      <div class="container final-cta-inner">
+        <div>
+          <h2 id="final-cta-title" data-i18n="finalCta.title">
+            Gati të sillni qartësi në financat e biznesit tuaj?
+          </h2>
+          <p data-i18n="finalCta.subtitle">
+            Na lini një mesazh dhe do t’ju kontaktojmë për një konsultë falas fillestare.
+          </p>
+        </div>
+        <a href="#contact" class="btn btn-primary" data-i18n="finalCta.button">Na kontakto</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <header class="section-header align-left">
+            <h2 id="contact-title" data-i18n="contact.title">Kontaktoni me ekipin tonë</h2>
+            <p data-i18n="contact.subtitle">
+              Plotësoni formularin dhe do të rikthehemi tek ju me një propozim të personalizuar brenda një dite pune.
+            </p>
+          </header>
+          <ul class="contact-info">
+            <li>
+              <strong data-i18n="contact.phoneLabel">Telefon:</strong>
+              <a href="tel:+355682392034">+355 68 239 2034</a>
+            </li>
+            <li>
+              <strong data-i18n="contact.emailLabel">Email:</strong>
+              <a href="mailto:info@sadoconsulting.al">info@sadoconsulting.al</a>
+            </li>
+            <li>
+              <strong data-i18n="contact.addressLabel">Adresë:</strong>
+              <span data-i18n="contact.addressValue">Bulevardi Kryesor, Tirane</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name" data-i18n="form.nameLabel">Emri dhe mbiemri</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                data-i18n-placeholder="form.namePlaceholder"
+                placeholder="Shkruani emrin tuaj"
+              />
+              <span class="field-error" data-error-for="name"></span>
+            </div>
+            <div class="form-field">
+              <label for="email" data-i18n="form.emailLabel">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                data-i18n-placeholder="form.emailPlaceholder"
+                placeholder="Shkruani adresën tuaj të emailit"
+              />
+              <span class="field-error" data-error-for="email"></span>
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="form.messageLabel">Mesazhi</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                data-i18n-placeholder="form.messagePlaceholder"
+                placeholder="Na tregoni pak më shumë rreth nevojës suaj"
+              ></textarea>
+              <span class="field-error" data-error-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="form.submit">
+              Dërgo mesazhin
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <svg class="footer-logo-icon" width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="8" fill="url(#footerLogoGradient)"/>
+            <rect x="9" y="22" width="4" height="9" rx="1" fill="white" opacity="0.92"/>
+            <rect x="16" y="18" width="4" height="13" rx="1" fill="white" opacity="0.92"/>
+            <rect x="23" y="14" width="4" height="17" rx="1" fill="white" opacity="0.92"/>
+            <path d="M9 24L17 18L23 20L31 12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31 12L30 15M31 12L28 13" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="footerLogoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#1b74e4"/>
+                <stop offset="100%" stop-color="#0ea5e9"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span data-i18n="footer.logo">SADO Finance Consulting</span>
+        </div>
+        <p data-i18n="footer.about">
+          Një ekip profesionistësh që e sheh kontabilitetin jo vetëm si detyrim ligjor, por si mjet për rritjen e biznesit tuaj.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer.linksTitle">Linqe të shpejta</h3>
+        <ul>
+          <li><a href="#home" data-i18n="nav.home">Ballina</a></li>
+          <li><a href="#services" data-i18n="nav.services">Shërbimet</a></li>
+          <li><a href="#about" data-i18n="nav.about">Rreth nesh</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Kontakti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer.servicesTitle">Shërbime</h3>
+        <ul>
+          <li><a href="#services" data-i18n="services.items.accounting.title">Kontabilitet i përditësuar</a></li>
+          <li><a href="#services" data-i18n="services.items.tax.title">Planifikim tatimor</a></li>
+          <li><a href="#services" data-i18n="services.items.payroll.title">Administrim pagash</a></li>
+          <li><a href="#services" data-i18n="services.items.consulting.title">Konsulencë strategjike</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer.contactTitle">Kontakti</h3>
+        <ul class="footer-contact">
+          <li>
+            <span data-i18n="contact.phoneLabel">Telefon:</span>
+            <a href="tel:+355682392034">+355 68 239 2034</a>
+          </li>
+          <li>
+            <span data-i18n="contact.emailLabel">Email:</span>
+            <a href="mailto:info@sadoconsulting.al">info@sadoconsulting.al</a>
+          </li>
+        </ul>
+        <div class="footer-social">
+          <span data-i18n="topbar.follow">Na ndiqni</span>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram" class="social-link">
+              <!-- Reuse Instagram SVG -->
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 
+                2.243 5 5 5h10c2.757 0 5-2.243 
+                5-5V7c0-2.757-2.243-5-5-5H7zm10 
+                2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 
+                3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 
+                1.346-3 3-3h10zm-5 2c-3.309 0-6 2.691-6 
+                6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 
+                2c2.206 0 4 1.794 4 4s-1.794 4-4 
+                4-4-1.794-4-4 1.794-4 4-4zm5.5-.75a1.25 
+                1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 
+                2.5z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <!-- Reuse LinkedIn SVG -->
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.88 
+                6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 
+                1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 
+                0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4.1 
+                0 4.8 2.7 4.8 6.2V24h-4v-7.2c0-1.7 0-3.8-2.3-3.8-2.3 
+                0-2.7 1.8-2.7 3.7V24h-4V8z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p data-i18n="footer.copyright">
+          © 2026 SADO Finance Consulting. Të gjitha të drejtat e rezervuara.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Service Modal -->
+  <div class="modal-backdrop" data-modal-backdrop hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close dialog">
+        ×
+      </button>
+      <h2 id="modal-title"></h2>
+      <p class="modal-body"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
